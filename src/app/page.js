@@ -146,7 +146,7 @@ function Home() {
                       <div className="slider-shape">
                         <div className="img-shape2">
                           <img
-                            src="public/images/images/slider-shape.png"
+                            src="images/images/slider-shape.png"
                             alt="Image"
                           />
                         </div>
@@ -178,13 +178,13 @@ function Home() {
                         <div className="slider-img">
                           <div className="img wow fadeInLeft">
                             <img
-                              src="public/images/images/slider-img.png"
+                              src="images/slider-img.png"
                               alt="Image"
                             />
                           </div>
                           <div className="img-shape wow fadeInRight">
                             <img
-                              src="images/images/banner-shape.png"
+                              src="images/banner-shape.png"
                               alt="Image"
                             />
                           </div>
@@ -207,17 +207,17 @@ function Home() {
             </div>
             <div className="shape2">
               <img
-                src="public/images/shape2.png"
+                src="images/shape2.png"
                 className=" wow pulse"
                 alt="Shape"
               />
             </div>
             <div className="shape3">
-              <img src="public/images/shape3.png" alt="Shape" />
+              <img src="images/shape3.png" alt="Shape" />
             </div>
             <div className="shape4">
               <img
-                src="public/images/shape4.png"
+                src="images/shape4.png"
                 className=" wow pulse"
                 alt="Shape"
               />
