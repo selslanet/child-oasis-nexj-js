@@ -1,6 +1,70 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Image from "next/image";
+import Link from "next/link";
+// Child Care Slider
+import sliderimg2 from "../../public/images/slider-img2.png"
+import bannershape from "../../public/images/banner-shape.png"
+import slidershape from "../../public/images/slider-shape.png"
+import sliderimg from "../../public/images/slider-img.png"
+import shape1 from "../../public/images/shape1.png"
+import shape2 from "../../public/images/shape2.png"
+import shape3 from "../../public/images/shape3.png"
+import shape4 from "../../public/images/shape4.png"
+
+//  Features Section 
+import ibg1 from "../../public/images/ibg1.png"
+import ibg2 from "../../public/images/ibg2.png"
+import ibg3 from "../../public/images/ibg3.png"
+import ibg4 from "../../public/images/ibg4.png"
+
+
+// about section
+import titleborder from "../../public/images/title-border.png"
+import bgshapes3 from "../../public/images/bg-shapes-3.png"
+import aboutbg2 from "../../public/images/about-bg2.png"
+
+import shape111 from "../../public/images/shape1_1.png"
+import shape21 from "../../public/images/shape2_1.png"
+import shape31 from "../../public/images/shape3_1.png"
+import shape41 from "../../public/images/shape4_1.png"
+
+// Features2 Section
+import f1 from "../../public/images/1.png"
+import f2 from "../../public/images/2_0.png"
+import f3 from "../../public/images/3.png"
+import f4 from "../../public/images/4.png"
+import f5 from "../../public/images/5.png"
+
+import shape7 from "../../public/images/shape7.png"
+import shape8 from "../../public/images/shape8.png"
+import shape9 from "../../public/images/shape9.png"
+import shape10 from "../../public/images/shape10.png"
+import shape11 from "../../public/images/shape11.png"
+import shape12 from "../../public/images/shape12.png"
+
+
+// Program Section
+
+import playactivity from "../../public/images/play activity.jpg"
+import scienceactivity from "../../public/images/science activity.jpg"
+import pg31 from "../../public/images/3_1.jpg"
+
+// Plan Section
+
+import planshape32 from "../../public/images/shape3_2.png"
+import planshape12 from "../../public/images/shape1_2.png"
+import planshape22 from "../../public/images/shape2_2.png"
+
+// Testimonial2 Section
+
+import titleborder2 from "../../public/images/title-border2.png"
+
+import sliderimg1 from "../../public/images/slider-img1.png"
+import sliderimg3 from "../../public/images/slider-img3.png"
+import sliderimg4 from "../../public/images/slider-img4.png"
+import comments2 from "../../public/images/comments-2.png"
 
 function Home() {
   return (
@@ -19,7 +83,7 @@ function Home() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="modal-form-left">
-                    <img src="images/modal-bg.png" alt="Image" />
+                    <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14} />
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -136,18 +200,20 @@ function Home() {
                       <div className="col-md-6 col-lg-6">
                         <div className="slider-img">
                           <div className="img wow fadeInLeft">
-                            <img src="images/slider-img2.png" alt="Image" />
+                            <Image src={sliderimg2} alt="Image" width={500} height={500} />
                           </div>
                           <div className="img-shape">
-                            <img src="images/banner-shape.png" alt="Image" />
+                            <Image src={bannershape} alt="Image" width={500} height={500} />
                           </div>
                         </div>
                       </div>
                       <div className="slider-shape">
                         <div className="img-shape2">
-                          <img
-                            src="images/images/slider-shape.png"
+                          <Image
+                            src={slidershape}
                             alt="Image"
+                            width={500}
+                            height={500}
                           />
                         </div>
                       </div>
@@ -177,22 +243,26 @@ function Home() {
                       <div className="col-md-6 col-lg-6">
                         <div className="slider-img">
                           <div className="img wow fadeInLeft">
-                            <img
-                              src="images/slider-img.png"
+                            <Image
+                              src={sliderimg}
                               alt="Image"
+                              width={500}
+                              height={500}
                             />
                           </div>
                           <div className="img-shape wow fadeInRight">
-                            <img
-                              src="images/banner-shape.png"
+                            <Image
+                              src={bannershape}
                               alt="Image"
+                              width={500}
+                              height={500}
                             />
                           </div>
                         </div>
                       </div>
                       <div className="slider-shape">
                         <div className="img-shape2">
-                          <img src="images/slider-shape.png" alt="Image" />
+                          <Image src={slidershape} alt="Image" width={500} height={500} />
                         </div>
                       </div>
                     </div>
@@ -203,24 +273,16 @@ function Home() {
           </div>
           <div className="slider-all-shape">
             <div className="shape1">
-              <img src="images/images/shape1.png" alt="Shape" />
+              <Image src={shape1} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape2">
-              <img
-                src="images/shape2.png"
-                className=" wow pulse"
-                alt="Shape"
-              />
+              <Image src={shape2} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape3">
-              <img src="images/shape3.png" alt="Shape" />
+              <Image src={shape3} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape4">
-              <img
-                src="images/shape4.png"
-                className=" wow pulse"
-                alt="Shape"
-              />
+              <Image src={shape4} alt="Shape" width={50} height={50} />
             </div>
           </div>
         </section>
@@ -232,7 +294,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image1">
-                    <img src="images/ibg1.png" alt="Image" />
+                    <Image src={ibg1} alt="Image" width={105} height={77} />
                   </div>
                   <h3>رعاية شاملة</h3>
                   <p>
@@ -244,7 +306,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image2">
-                    <img src="images/ibg2.png" alt="Image" />
+                    <Image src={ibg2} alt="Image" width={105} height={77} />
                   </div>
                   <h3>تعليم فعال</h3>
                   <p>
@@ -257,7 +319,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image3">
-                    <img src="images/ibg3.png" alt="Image" />
+                    <Image src={ibg3} alt="Image" width={105} height={77} />
                   </div>
                   <h3>بيئة سعيدة</h3>
                   <p>
@@ -270,7 +332,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image4">
-                    <img src="images/ibg4.png" alt="Image" />
+                    <Image src={ibg4} alt="Image" width={105} height={77} />
                   </div>
                   <h3>طاقم مؤهل</h3>
                   <p>
@@ -292,7 +354,7 @@ function Home() {
                   <div className="section-title">
                     <h6>معلومات عنا</h6>
                     <h2>مرحبًا بك في مركز واحة الطفل</h2>
-                    <img src="images/title-border.png" alt="Image" />
+                    <Image src={titleborder} alt="Image" width={100} height={6} />
                     <p>
                       نحن نؤمن بأهمية مرحلة الحضانة والتأثير الإيجابي الذي يمكن
                       أن يكون له على حياة الأطفال. في واحتنا، نقوم بتوفير أنشطة
@@ -347,26 +409,26 @@ function Home() {
               <div className="col-lg-6">
                 <div className="single-about-bg2 item-bg">
                   <div className="image-shape2">
-                    <img src="images/bg-shapes-3.png" alt="Shape" />
+                    <Image src={bgshapes3} alt="Shape" width={192} height={301} />
                   </div>
                   <div className="image">
-                    <img src="images/about-bg2.png" alt="Image" />
+                    <Image src={aboutbg2} alt="Image" width={340.39} height={226.08} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="shape1">
-            <img src="images/shape1_1.png" alt="Image" />
+            <Image src={shape111} alt="Image" width={33} height={31} />
           </div>
           <div className="shape2">
-            <img src="images/shape2_1.png" alt="Image" />
+            <Image src={shape21} alt="Image" width={32} height={32} />
           </div>
           <div className="shape3">
-            <img src="images/shape3_1.png" alt="Image" />
+            <Image src={shape31} alt="Image" width={48} height={55} />
           </div>
           <div className="shape4">
-            <img src="images/shape4_1.png" alt="Image" />
+            <Image src={shape41} alt="Image" width={48} height={55} />
           </div>
         </section>
         {/* End About Section */}
@@ -376,36 +438,36 @@ function Home() {
             <div className="section-title text-center">
               <h6>مميزاتنا</h6>
               <h2>لماذا مركز واحة الطفل</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="feature-box-wrapper">
               <div className="single-feature">
                 <div className="ico-bg1">
-                  <img src="images/1.png" alt="Image" />
+                  <Image src={f1} alt="Image" width={80} height={80} />
                 </div>
                 <h2>أنشطة تعليمية</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg2">
-                  <img src="images/2_0.png" alt="Image" />
+                  <Image src={f2} alt="Image" width={80} height={80} />
                 </div>
                 <h2>أنشطة إبداعية</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg3">
-                  <img src="images/3.png" alt="Image" />
+                  <Image src={f3} alt="Image" width={80} height={80} />
                 </div>
                 <h2>طاقم مؤهل</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg4">
-                  <img src="images/4.png" alt="Image" />
+                  <Image src={f4} alt="Image" width={80} height={80} />
                 </div>
                 <h2>باقات اشتراك مرنة</h2>
               </div>
               <div className="offset-md-3 offset-lg-0 single-feature">
                 <div className="image ico-bg5">
-                  <img src="images/5.png" alt="Image" />
+                  <Image src={f5} alt="Image" width={80} height={80} />
                 </div>
                 <h2>نعمل على مدار السنة</h2>
               </div>
@@ -413,22 +475,22 @@ function Home() {
           </div>
           <div className="event-shape">
             <div className="shape1">
-              <img src="images/shape7.png" alt="Shape" />
+              <Image src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape2">
-              <img src="images/shape8.png" alt="Shape" />
+              <Image src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape3">
-              <img src="images/shape9.png" alt="Shape" />
+              <Image src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape4">
-              <img src="images/shape10.png" alt="Shape" />
+              <Image src={shape10} alt="Shape" width={32} height={32} />
             </div>
             <div className="shape5">
-              <img src="images/shape11.png" alt="Shape" />
+              <Image src={shape11} alt="Shape" width={32} height={46} />
             </div>
             <div className="shape6">
-              <img src="images/shape12.png" alt="Shape" />
+              <Image src={shape12} alt="Shape" width={32} height={30} />
             </div>
           </div>
         </section>
@@ -439,13 +501,13 @@ function Home() {
             <div className="section-title text-center">
               <h6>الأنشطة</h6>
               <h2>الأنشطة والبرامج الصفية</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="program-slider owl-carousel owl-theme">
               <div className="single-program">
                 <div className="image">
-                  <a href="program-details.html">
-                    <img src="images/play activity.jpg" alt="Image" />
+                  <a href="#">
+                    <Image src={playactivity} alt="Image" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -469,8 +531,8 @@ function Home() {
               </div>
               <div className="single-program">
                 <div className="image">
-                  <a href="program-details.html">
-                    <img src="images/science activity.jpg" alt="Image" />
+                  <a href="#">
+                    <Image src={scienceactivity} alt="Image" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -495,8 +557,9 @@ function Home() {
               </div>
               <div className="single-program">
                 <div className="image">
-                  <a href="program-details.html">
-                    <img src="images/3_1.jpg" alt="Image" />
+                  <a href="#">
+
+                    <Image src={pg31} alt="Image" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -532,7 +595,7 @@ function Home() {
             <div className="section-title text-center">
               <h6>الجدول</h6>
               <h2>الجدول الزمني </h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="single-event2">
               <div className="time">
@@ -578,7 +641,7 @@ function Home() {
               {/* <a href="#" class="read-more-btn">اقرأ أكثر<i class="fa fa-angle-left" aria-hidden="true"></i></a> */}
             </div>
           </div>
-          <div className="event-shape">
+          {/* <div className="event-shape">
             <div className="shape1">
               <img src="images/shape7.png" alt="Shape" />
             </div>
@@ -597,6 +660,26 @@ function Home() {
             <div className="shape6">
               <img src="images/shape12.png" alt="Shape" />
             </div>
+          </div> */}
+          <div className="event-shape">
+            <div className="shape1">
+              <Image src={shape7} alt="Shape" width={32} height={83} />
+            </div>
+            <div className="shape2">
+              <Image src={shape8} alt="Shape" width={32} height={31} />
+            </div>
+            <div className="shape3">
+              <Image src={shape9} alt="Shape" width={32} height={34} />
+            </div>
+            <div className="shape4">
+              <Image src={shape10} alt="Shape" width={32} height={32} />
+            </div>
+            <div className="shape5">
+              <Image src={shape11} alt="Shape" width={32} height={46} />
+            </div>
+            <div className="shape6">
+              <Image src={shape12} alt="Shape" width={32} height={30} />
+            </div>
           </div>
         </section>
         {/* End Event2 Section */}
@@ -606,7 +689,7 @@ function Home() {
             <div className="section-title text-center">
               <h6>الباقات</h6>
               <h2>باقات الاشتراك</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="row">
               <div className="col-md-6 col-lg-4">
@@ -624,10 +707,10 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <img src="images/shape3_2.png" alt="Image" />
+                    <Image src={planshape32} alt="Image" width={90} height={88} />
                   </div>
                   <div className="card-button">
-                    <a href="contact.html" className="card-btn">
+                    <a href="contact" className="card-btn">
                       اختر الباقة
                     </a>
                   </div>
@@ -648,10 +731,10 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <img src="images/shape3_2.png" alt="Image" />
+                    <Image src={planshape32} alt="Image" width={90} height={88} />
                   </div>
                   <div className="card-button">
-                    <a href="contact.html" className="card-btn">
+                    <a href="contact" className="card-btn">
                       اختر الباقة
                     </a>
                   </div>
@@ -672,10 +755,10 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <img src="images/shape3_2.png" alt="Image" />
+                    <Image src={planshape32} alt="Image" width={90} height={88} />
                   </div>
                   <div className="card-button">
-                    <a href="contact.html" className="card-btn">
+                    <a href="contact" className="card-btn">
                       اختر الباقة
                     </a>
                   </div>
@@ -685,13 +768,14 @@ function Home() {
           </div>
           <div className="plan-shape-image">
             <div className="shape1">
-              <img src="images/shape1_2.png" alt="Image" />
+              <Image src={planshape12} alt="Image" width={67} height={128} />
             </div>
             <div className="shape2">
-              <img src="images/shape2_2.png" alt="Image" />
+              <Image src={planshape22} alt="Image" width={67} height={128} />
             </div>
           </div>
         </section>
+
         {/* End Plan Section */}
         {/* Start Testimonial2 Section */}
         <section className="testimonial2-section ptb-100">
@@ -699,29 +783,32 @@ function Home() {
             <div className="section-title text-center">
               <h6>التعليقات</h6>
               <h2>آراء العملاء من الآباء والأمهات</h2>
-              <img src="images/title-border2.png" alt="Image" />
+              <Image src={titleborder2} alt="Image" width={127} height={8} />
             </div>
             <div className="testimonial-slider">
               <div className="client-image-list">
                 <div>
                   <div className="item">
                     <div className="sl-img">
-                      <img src="images/slider-img1.png" alt="image" />
+                      <Image src={sliderimg1} alt="image" width={85} height={85} />
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
-                      <img src="images/slider-img3.png" alt="image" />
+                    
+                      <Image src={sliderimg3} alt="image" width={85} height={85} />
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
-                      <img src="images/comments-2.png" alt="image" />
+                      <Image src={comments2} alt="image" width={85} height={85} />
+
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
-                      <img src="images/slider-img4.png" alt="image" />
+                    
+                      <Image src={sliderimg4} alt="image" width={85} height={85} />
                     </div>
                   </div>
                 </div>
@@ -820,31 +907,31 @@ function Home() {
           </div>
           <div className="testimonial-shape">
             <div className="shape1">
-              <img src="images/shape7.png" alt="Shape" />
+              <Image src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape2">
-              <img src="images/shape7.png" alt="Shape" />
+              <Image src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape3">
-              <img src="images/shape7.png" alt="Shape" />
+              <Image src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape4">
-              <img src="images/shape8.png" alt="Shape" />
+              <Image src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape5">
-              <img src="images/shape9.png" alt="Shape" />
+              <Image src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape6">
-              <img src="images/shape9.png" alt="Shape" />
+              <Image src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape7">
-              <img src="images/shape8.png" alt="Shape" />
+              <Image src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape8">
-              <img src="images/shape12.png" alt="Shape" />
+              <Image src={shape12} alt="Shape" width={32} height={30} />
             </div>
             <div className="shape9">
-              <img src="images/shape12.png" alt="Shape" />
+              <Image src={shape12} alt="Shape" width={32} height={30} />
             </div>
           </div>
         </section>
@@ -855,14 +942,14 @@ function Home() {
             <div className="section-title text-center">
               <h6>الفريق</h6>
               <h2>مقدمات الرعاية</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="row">
               <div className="col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <img
-                      src="images/t2.png"
+                    <Image
+                      src="/images/t2.png"
                       alt="Image"
                       height={170}
                       width={170}
@@ -872,21 +959,14 @@ function Home() {
                     <h3>ولاء الجوير</h3>
                     <h5>معلمة حضانة</h5>
                   </div>
-                  {/* <div class="social-link"> 
-                           <ul> 
-                              <li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
-                              <li><a href="#"><i class="flaticon-twitter-black-shape"></i></a></li>
-                              <li><a href="#"><i class="flaticon-google-plus-symbol"></i></a></li>
-                              <li><a href="#"><i class="flaticon-linkedin-letters"></i></a></li>
-                          </ul>
-                      </div>*/}
+                 
                 </div>
               </div>
               <div className="col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <img
-                      src="images/t1.png"
+                    <Image
+                      src="/images/t1.png"
                       alt="Image"
                       height={170}
                       width={170}
@@ -896,21 +976,14 @@ function Home() {
                     <h3>هياء السبعان</h3>
                     <h5>معلمة النشاط والفنون</h5>
                   </div>
-                  {/* <div class="social-link">
-                          <ul>
-                              <li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
-                              <li><a href="#"><i class="flaticon-twitter-black-shape"></i></a></li>
-                              <li><a href="#"><i class="flaticon-google-plus-symbol"></i></a></li>
-                              <li><a href="#"><i class="flaticon-linkedin-letters"></i></a></li>
-                          </ul>
-                      </div> */}
+                 
                 </div>
               </div>
               <div className="offset-md-3 offset-lg-0 col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <img
-                      src="images/t3.png"
+                    <Image
+                      src="/images/t3.png"
                       alt="Image"
                       height={170}
                       width={170}
@@ -920,14 +993,7 @@ function Home() {
                     <h3>أسرار المديد</h3>
                     <h5>معلمة حضانة</h5>
                   </div>
-                  {/* <div class="social-link">
-                          <ul>
-                              <li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
-                              <li><a href="#"><i class="flaticon-twitter-black-shape"></i></a></li>
-                              <li><a href="#"><i class="flaticon-google-plus-symbol"></i></a></li>
-                              <li><a href="#"><i class="flaticon-linkedin-letters"></i></a></li>
-                          </ul>
-                      </div> */}
+                 
                 </div>
               </div>
             </div>
@@ -939,16 +1005,16 @@ function Home() {
           <div className="container">
             <div className="logo-slider owl-carousel owl-theme">
               <div className="single-logo">
-                <img src="images/1_2.png" alt="Logo" />
+                <Image src="/images/1_2.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <img src="images/2_3.png" alt="Logo" />
+                <Image src="/images/2_3.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <img src="images/3_3.png" alt="Logo" />
+                <Image src="/images/3_3.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <img src="images/4_1.png" alt="Logo" />
+                <Image src="/images/4_1.png" alt="Logo" width={100} height={130} />
               </div>
             </div>
           </div>
@@ -1132,49 +1198,51 @@ function Home() {
       </div>
   </section>*/}
         {/* End Blog2 Section */}
+
+        {/* Blog2 Section */}
         {/* Blog2 Section */}
         <section className="blog2-section ptb-100">
           <div className="container">
             <div className="section-title text-center">
               <h6>أحدث المواضيع</h6>
               <h2>آخر مدونة</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src={titleborder} alt="Image" width={127} height={8} />
             </div>
             <div className="blog-slider-two owl-carousel owl-theme">
               <div className="single-blog">
                 <div className="blog-image">
-                  <a href="How-to-motivate-your-child-to-read-details.html">
-                    <img src="images/1.jpg" alt="Image" />
-                  </a>
+                  <Link href="motivate">
+                    <Image src="/images/1.jpg" alt="Image" width={352} height={261} />
+                  </Link>
                 </div>
                 <div className="img-caption">
                   <div className="blog-chat-list">
                     <ul>
                       <li className="date">
-                        <i className="fa fa-calendar" aria-hidden="true" />٧
-                        نوفمبر ٢٠٢٣.
+                        <i className="fa fa-calendar" aria-hidden="true" />٧ نوفمبر
+                        ٢٠٢٣.
                       </li>
                       {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
-                  <a href="How-to-motivate-your-child-to-read-details.html">
+                  <Link href="motivate">
                     <h3>كيف تحفز طفلك للقراءة</h3>
-                  </a>
+                  </Link>
                   <p> اجعل القراءة جزءًا طبيعيًا من روتين طفلك اليومي-</p>
-                  <a
-                    href="How-to-motivate-your-child-to-read-details.html"
+                  <Link
+                    href="motivate"
                     className="read-more-btn"
                   >
                     اقرأ أكثر
                     <i className="fa fa-long-arrow-left" aria-hidden="true" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="single-blog">
                 <div className="blog-image">
-                  <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
-                    <img src="images/2.png" alt="Image" />
-                  </a>
+                  <Link href="childneed">
+                    <Image src="/images/2.jpg" alt="Image" width={352} height={261} />
+                  </Link>
                 </div>
                 <div className="img-caption">
                   <div className="blog-chat-list">
@@ -1186,7 +1254,7 @@ function Home() {
                       {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
-                  <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
+                  <a href="childneed">
                     <h3> ماذا يحتاج طفلك في حقيبة الحضانة ؟</h3>
                   </a>
                   جاء الوقت ليذهب صغيركِ إلى الحضانة حيث الأصدقاء الجدد والبيئة
@@ -1242,20 +1310,20 @@ function Home() {
                         بعد أن أعددتِ قائمة بما يحتاجه طفلك، عليكِ الآن ترتيب حقيبة الحضانة بشكل منظم، حتى يسهل على طفلك إيجاد ما يبحث عنه فيها بسهولة: اتركي حفاضات الطفل مع أغراض النظافة الشخصية، كالمناديل المبللة، وجل التعقيم، والمنشفة في جيب منفصل. ويُفضل ترك هذه الأغراض في الحضانة كما ذكرنا. لا تضعي زجاجة الماء مع الكتب حتى لا تتلفها في حال تسربه، لذا يفضل اختيار حافظة لزجاجة الماء، حتى يحملها الطفل بمفردها، أو وضعها في الحقيبة في جيب منفصل. لذا ننصحكِ بشراء الحقيبة ذات الجيوب الجانبية المخصصة لوضع الزجاجة، بعيدًا عن الأغراض الموجودة داخل الحقيبة. غلفي الفاكهة أو الخضروات المقطعة باستخدام رول البلاستيك، ثم ضعيهما في اللانش بوكس، لحفظها من التقاط الأتربة إذا وقعت من الطفل، ومنع تسرب قطرات الماء منها على أدوات طفلك.  رصي كتب الطفل والأقلام في الحقيبة، خصصي مقلمة للأدوات المكتبية. وإذا كانت حقيبة الطفل بجيب واحد، يمكنكِ شراء منظم للحقائب، وهو متوافر بالأسواق لتنظيم أغراض الطفل داخل حقيبته..... </p>*/}
                   <br />
                   <br />
-                  <a
-                    href="What-does-your-child-need-in-the-nursery-bag-details.html"
+                  <Link
+                    href="childneed"
                     className="read-more-btn"
                   >
                     اقرأ أكثر
                     <i className="fa fa-long-arrow-left" aria-hidden="true" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="single-blog">
                 <div className="blog-image">
-                  <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
-                    <img src="images/9.jpg" alt="Image" />
-                  </a>
+                  <Link href="health">
+                    <Image src="/images/9.jpg" alt="Image" width={352} height={261} />
+                  </Link>
                 </div>
                 <div className="img-caption">
                   <div className="blog-chat-list">
@@ -1267,9 +1335,9 @@ function Home() {
                       {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
-                  <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
+                  <Link href="health">
                     <h3>فطور صحي للأطفال في الروضة</h3>
-                  </a>
+                  </Link>
                   الوجبة الأولى التي يحصل عليها صغيرك في الروضة هي الإفطار--
                   {/* الذي يجب أن يحتوي على العناصر الغذائية التي تساعده على بدء يومه بنشاط، وتمنحه الطاقة التي تمكنه من التركيز واللعب طوال اليوم، وأهم العناصر التي يجب توافرها فيها: البروتين.  الكربوهيدرات المعقدة.  الخضراوات. 
 
@@ -1320,37 +1388,39 @@ function Home() {
                      أرز والدجاج.ة.... </p>*/}
                   <br />
                   <br />
-                  <a
-                    href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html"
+                  <Link
+                    href="health"
                     className="read-more-btn"
                   >
                     اقرأ أكثر
                     <i className="fa fa-long-arrow-left" aria-hidden="true" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="blog-baby-image">
               <ul>
                 <li className="image-1">
-                  <img src="images/5_1.png" alt="Image" />
+                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
                 </li>
                 <li className="image-1">
-                  <img src="images/6_1.png" alt="Image" />
+                  <Image src="/images/6_1.png" alt="Image" width={155} height={141.7} />
                 </li>
                 <li className="image-1">
-                  <img src="images/5_1.png" alt="Image" />
+                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
                 </li>
                 <li className="image-4">
-                  <img src="images/6_1.png" alt="Image" />
+                  <Image src="/images/6_1.png" alt="Image" width={155} height={141.7} />
+
                 </li>
                 <li className="image-5">
-                  <img src="images/5_1.png" alt="Image" />
+                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
                 </li>
               </ul>
             </div>
           </div>
         </section>
+        {/* End Blog2 Section */}
         {/* End Blog2 Section */}
       </>
 

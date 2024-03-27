@@ -2,11 +2,12 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import Loader from './Loader';
+import Image from 'next/image';
 
 function Contact() {
   return (
     <div>
-      <Loader />
+      {/* <Loader /> */}
         <Header />
         <>
   {/* Login-Modal */}
@@ -16,7 +17,7 @@ function Contact() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -120,7 +121,7 @@ function Contact() {
               <li>التواصل</li>
               <i className="flaticon-left-arrow" />
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
               </li>
             </ul>
           </div>
@@ -134,7 +135,7 @@ function Contact() {
     <div className="container">
       <div className="section-title text-center">
         <h2>طلب تسجيل أو استفسار </h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-lg-12">
@@ -237,7 +238,7 @@ function Contact() {
     <div className="container">
       <div className="section-title text-center">
         <h2>تواصل معنا</h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-md-6 col-lg-4">

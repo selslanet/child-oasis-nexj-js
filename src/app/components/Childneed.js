@@ -2,11 +2,13 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Loader from "./Loader";
+import Link from "next/link";
+import Image from "next/image";
 
 function Childneed() {
   return (
     <div>
-      <Loader />
+      {/* <Loader /> */}
       <Header />
 
       <>
@@ -22,7 +24,7 @@ function Childneed() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="modal-form-left">
-                    <img src="images/modal-bg.png" alt="Image" />
+                  <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -124,7 +126,7 @@ function Childneed() {
                   <h1>ماذا يحتاج طفلك في حقيبة الحضانة ؟</h1>
                   <ul>
                     <li>
-                      <a href="/home">الصفحة الرئيسية</a>
+                      <a href="/">الصفحة الرئيسية</a>
                       <i className="flaticon-right-arrow" />
                     </li>
                     <li>ماذا يحتاج طفلك في حقيبة الحضانة ؟</li>
@@ -144,7 +146,7 @@ function Childneed() {
                   <div className="single-blog">
                     <div className="blog-image">
                       <div className="single-img">
-                        <img src="images/2.png" alt="Image" height={480} />
+                        <Image src="/images/2.png" alt="Image" height={480} width={736}/>
                       </div>
                     </div>
                     <div className="blog-content">
@@ -267,16 +269,16 @@ function Childneed() {
                     <div className="latest-posts">
                       <div className="latest-title">
                         <h3>أحدث المواضيع</h3>
-                        <img src="images/title-img.png" alt="Image" />
+                        <Image src="/images/title-img.png" alt="Image" width={68} height={4}/>
                       </div>
                       <div className="posts-box">
                         <div className="p-img">
-                          <img src="images/2.png" alt="image" height={75} />
+                          <Image src="/images/2.png" alt="image" height={75} width={100}/>
                         </div>
                         <div className="p-text">
-                          <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
+                          <Link href="childneed">
                             <h3>ماذا يحتاج طفلك في حقيبة الحضانة ؟</h3>
-                          </a>
+                          </Link>
                           <span>
                             <i className="fa fa-calendar" /> ١٦ مايو ٢٠١٦.
                           </span>
@@ -284,12 +286,12 @@ function Childneed() {
                       </div>
                       <div className="posts-box">
                         <div className="p-img">
-                          <img src="images/9.jpg" alt="image" height={75} />
+                          <Image src="/images/9.jpg" alt="image" height={75} width={100} />
                         </div>
                         <div className="p-text">
-                          <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
+                          <Link href="health">
                             <h3>فطور صحي للأطفال في الروضة</h3>
-                          </a>
+                          </Link>
                           <span>
                             <i className="fa fa-calendar" />
                             ٢٢ مارس ٢٠٢٢.
@@ -298,12 +300,12 @@ function Childneed() {
                       </div>
                       <div className="posts-box">
                         <div className="p-img">
-                          <img src="images/1.jpg" alt="image" height={75} />
+                          <Image src="/images/1.jpg" alt="image" height={75} width={100}/>
                         </div>
                         <div className="p-text">
-                          <a href="How-to-motivate-your-child-to-read-details.html">
+                          <Link href="motivate">
                             <h3>كيف تحفز طفلك للقراءة</h3>
-                          </a>
+                          </Link>
                           <span>
                             <i className="fa fa-calendar" />٧ نوفمبر ٢٠٢٣.
                           </span>
@@ -315,9 +317,9 @@ function Childneed() {
                       <p>للحصول على أي معلومات </p>
                       <h4>٠٥٠٠٨٩٩١٧٣</h4>
                       <div className="card-button">
-                        <a href="contact.html" className="card-btn">
+                        <Link href="contact" className="card-btn">
                           اتصل بنا
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

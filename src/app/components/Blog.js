@@ -2,12 +2,14 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import Loader from './Loader';
+import Link from 'next/link';
+import Image from 'next/image';
 
 function Blog() {
   return (
     <div>
 
-      <Loader />
+      {/* <Loader /> */}
       <Header />
 
       <>
@@ -18,7 +20,7 @@ function Blog() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -122,7 +124,7 @@ function Blog() {
               <li>أحدث المواضيع</li>
               <i className="flaticon-left-arrow" />
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
               </li>
             </ul>
           </div>
@@ -138,9 +140,9 @@ function Blog() {
         <div className="col-md-6 col-lg-4">
           <div className="single-blog mb-30">
             <div className="blog-image">
-              <a href="How-to-motivate-your-child-to-read-details.html">
-                <img src="images/1.jpg" alt="Image" />
-              </a>
+              <Link href="/motivate">
+                <Image src="/images/1.jpg" alt="Image" width={356} height={264.64}/>
+              </Link>
             </div>
             <div className="img-caption">
               <div className="blog-chat-list">
@@ -149,26 +151,26 @@ function Blog() {
                   {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 comments</li> */}
                 </ul>
               </div>
-              <a href="How-to-motivate-your-child-to-read-details.html">
+              <Link href="/motivate">
                 <h3>كيف تحفز طفلك للقراءة</h3>
-              </a>
+              </Link>
               <p> اجعل القراءة جزءًا طبيعيًا من روتين طفلك اليومي-</p>
-              <a
-                href="How-to-motivate-your-child-to-read-details.html"
+              <Link
+                href="/motivate"
                 className="read-more-btn"
               >
                 اقرأ أكثر
                 <i className="fa fa-long-arrow-left" aria-hidden="true" />
-              </a>{" "}
+              </Link>{" "}
             </div>
           </div>
         </div>
         <div className="col-md-6 col-lg-4">
           <div className="single-blog mb-30">
             <div className="blog-image">
-              <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
-                <img src="images/2.png" alt="Image" />
-              </a>
+              <Link href="/childneed">
+                <Image src="/images/2.png" alt="Image"  width={356} height={264.64}/>
+              </Link>
             </div>
             <div className="img-caption">
               <div className="blog-chat-list">
@@ -177,29 +179,29 @@ function Blog() {
                   {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 comments</li> */}
                 </ul>
               </div>
-              <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
+              <Link href="/childneed">
                 <h3> ماذا يحتاج طفلك في حقيبة الحضانة ؟</h3>
-              </a>
+              </Link>
               <p>
                 جاء الوقت ليذهب صغيركِ إلى الحضانة حيث الأصدقاء الجدد والبيئة
                 الاجتماعية --
               </p>
-              <a
-                href="What-does-your-child-need-in-the-nursery-bag-details.html"
+              <Link
+                href="/childneed"
                 className="read-more-btn"
               >
                 اقرأ أكثر
                 <i className="fa fa-long-arrow-left" aria-hidden="true" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="col-md-6 col-lg-4">
           <div className="single-blog mb-30">
             <div className="blog-image">
-              <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
-                <img src="images/9.jpg" alt="Image" />
-              </a>
+              <Link href="/health">
+                <Image src="/images/9.jpg" alt="Image"  width={356} height={264.64}/>
+              </Link>
             </div>
             <div className="img-caption">
               <div className="blog-chat-list">
@@ -208,17 +210,17 @@ function Blog() {
                   {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 comments</li> */}
                 </ul>
               </div>
-              <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
+              <Link href="/health">
                 <h3>فطور صحي للأطفال في الروضة</h3>
-              </a>
+              </Link>
               <p>الوجبة الأولى التي يحصل عليها صغيرك في الروضة هي الإفطار--</p>
-              <a
-                href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html"
+              <Link
+                href="/health"
                 className="read-more-btn"
               >
                 اقرأ أكثر
                 <i className="fa fa-long-arrow-left" aria-hidden="true" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

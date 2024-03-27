@@ -2,11 +2,16 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import Loader from './Loader';
+import Image from 'next/image';
+import shape1 from "../../../public/images/shape1.png"
+import shape2 from "../../../public/images/shape2.png"
+import shape3 from "../../../public/images/shape3.png"
+import shape4 from "../../../public/images/shape4.png"
 
 function About() {
   return (
     <>
-    <Loader />
+    {/* <Loader /> */}
     <Header />
 
     <>
@@ -17,7 +22,7 @@ function About() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -121,7 +126,7 @@ function About() {
               <li>معلومات عنا</li>
               <i className="flaticon-left-arrow" />
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
               </li>
               {/* <li>معلومات عنا</li> */}
             </ul>
@@ -140,7 +145,7 @@ function About() {
             <div className="section-title">
               <h6>معلومات عنا</h6>
               <h2>مرحبا بك في مركز واحة الطفل</h2>
-              <img src="images/title-border.png" alt="Image" />
+              <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
               <p>
                 تأسس مركز واحة الطفل عام ٢٠١٨ ،وهو مرخص من وزارة الموارد البشرية
                 والتنمية الاجتماعية. نهتم في المركز بالرعاية المتميزة و بتقديم
@@ -192,7 +197,7 @@ function About() {
           <div className="single-about-bg item-bg">
             <div className="about-img-cartwrap">
               <div className="image">
-                <img src="images/about-bg.png" alt="" />
+                <Image src="/images/about-bg.png" alt=""  width={270} height={598}/>
                 <div className="benefits-cart">
                   <div className="d-table">
                     <div className="d-tablecell">
@@ -208,16 +213,16 @@ function About() {
       </div>
     </div>
     <div className="shape1">
-      <img src="images/shape1.png" alt="Image" />
+      <Image src={shape1} alt="Image" width={43} height={45} />
     </div>
     <div className="shape2">
-      <img src="images/shape2.png" alt="Image" />
+      <Image src={shape2} alt="Image" width={56} height={60} />
     </div>
     <div className="shape3">
-      <img src="images/shape3.png" alt="Image" />
+    <Image src={shape3} alt="Image" width={70} height={75} />
     </div>
     <div className="shape4">
-      <img src="images/shape4.png" alt="Image" />
+    <Image src={shape4} alt="Image" width={50} height={50} />
     </div>
   </section>
   {/* End About Section */}
@@ -227,25 +232,27 @@ function About() {
       <div className="section-title text-center">
         <h6>الخدمات</h6>
         <h2>خدمات الرعاية والضيافة</h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image"  width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-md-6 col-sm-6 col-lg-4">
           <div className="single-service">
             <div className="services-all">
               <div className="image">
-                <a href="service-details.html">
-                  <img
-                    src="images/ico1.png"
+                <a href="#">
+                  <Image
+                    src="/images/ico1.png"
                     className="wow fadeInLeft"
                     alt="Image"
+                    width={52}
+                    height={53}
                   />
                 </a>
                 <div className="img-bg1" />
                 <div className="img-bg2" />
               </div>
               <div className="text">
-                <a href="service-details.html">
+                <a href="#">
                   <h3 className="sitting">تعليم فعال</h3>
                 </a>
                 <p>
@@ -260,18 +267,20 @@ function About() {
           <div className="single-service">
             <div className="services-all">
               <div className="image">
-                <a href="service-details.html">
-                  <img
-                    src="images/ico2.png"
+                <a href="#">
+                  <Image
+                    src="/images/ico2.png"
                     className="wow fadeInLeft"
                     alt="Image"
+                    width={47}
+                    height={49}
                   />
                 </a>
                 <div className="img-bg1 img-bg3" />
                 <div className="img-bg2 img-bg4" />
               </div>
               <div className="text">
-                <a href="service-details.html">
+                <a href="#">
                   <h3 className="shower">حضانة ورعاية</h3>
                 </a>
                 <p>
@@ -287,18 +296,20 @@ function About() {
           <div className="single-service">
             <div className="services-all">
               <div className="image">
-                <a href="service-details.html">
-                  <img
-                    src="images/ico3.png"
+                <a href="#">
+                  <Image
+                    src="/images/ico3.png"
                     className="wow fadeInLeft"
                     alt="Image"
+                    width={57}
+                    height={58}
                   />
                 </a>
                 <div className="img-bg1 img-bg5" />
                 <div className="img-bg2 img-bg6" />
               </div>
               <div className="text">
-                <a href="service-details.html">
+                <a href="#">
                   <h3 className="time-nan">مخيمات وأندية</h3>
                 </a>
                 <p>
@@ -368,18 +379,18 @@ function About() {
       <div className="section-title text-center">
         <h6>الفريق</h6>
         <h2>مقدمات الرعاية</h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-md-6 col-lg-4">
           <div className="single-baby">
             <div className="image">
-              <a href="service-details.html">
-                <img src="images/1-1.png" alt="Image" />
+              <a href="#">
+              <Image src="/images/1-1.png" alt="Image" width={296} height={230} />
               </a>
             </div>
             <div className="image-caption">
-              <a href="service-details.html">
+              <a href="#">
                 <h3>هياء السبعان</h3>
               </a>
               {/* <ul class="social-icon">
@@ -393,12 +404,12 @@ function About() {
         <div className="col-md-6 col-lg-4">
           <div className="single-baby">
             <div className="image">
-              <a href="service-details.html">
-                <img src="images/1-1.png" alt="Image" />
+              <a href="#">
+              <Image src="/images/1-1.png" alt="Image" width={296} height={230}/>
               </a>
             </div>
             <div className="image-caption">
-              <a href="service-details.html">
+              <a href="#">
                 <h3>منال الغشيان</h3>
               </a>
               {/* <ul class="social-icon">
@@ -412,12 +423,12 @@ function About() {
         <div className="offset-md-3 offset-lg-0 col-md-6 col-lg-4">
           <div className="single-baby">
             <div className="image">
-              <a href="service-details.html">
-                <img src="images/1-1.png" alt="Image" />
+              <a href="#">
+              <Image src="/images/1-1.png" alt="Image" width={296} height={230}/>
               </a>
             </div>
             <div className="image-caption">
-              <a href="service-details.html">
+              <a href="#">
                 <h3>ولاء الجوير</h3>
               </a>
               {/* <ul class="social-icon">

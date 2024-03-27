@@ -2,11 +2,18 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Loader from './Loader'
+import Image from 'next/image'
 
+import shape7 from "../../../public/images/shape7.png"
+import shape8 from "../../../public/images/shape8.png"
+import shape9 from "../../../public/images/shape9.png"
+import shape10 from "../../../public/images/shape10.png"
+import shape11 from "../../../public/images/shape11.png"
+import shape12 from "../../../public/images/shape12.png"
 function Pricing() {
   return (
     <div>
-      <Loader />
+      {/* <Loader /> */}
       <Header />
       <>
   {/* Login-Modal */}
@@ -16,7 +23,7 @@ function Pricing() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+              <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -120,7 +127,7 @@ function Pricing() {
               <li>الاشتراكات</li>
               <i className="flaticon-left-arrow" />
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
               </li>
             </ul>
           </div>
@@ -135,7 +142,7 @@ function Pricing() {
       <div className="section-title text-center">
         <h6>الباقات</h6>
         <h2>باقات الاشتراك</h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image" width={127} height={8} />
       </div>
       <div className="row">
         <div className="col-md-6 col-lg-4">
@@ -153,10 +160,10 @@ function Pricing() {
               </ul>
             </div>
             <div className="img-shape">
-              <img src="images/shape3.png" alt="Image" />
+              <Image src="/images/shape3.png" alt="Image" width={90} height={98.44}/>
             </div>
             <div className="card-button">
-              <a href="contact.html" className="card-btn">
+              <a href="contact" className="card-btn">
                 اختر الباقة
               </a>
             </div>
@@ -177,10 +184,10 @@ function Pricing() {
               </ul>
             </div>
             <div className="img-shape">
-              <img src="images/shape3.png" alt="Image" />
+            <Image src="/images/shape3.png" alt="Image" width={90} height={98.44}/>
             </div>
             <div className="card-button">
-              <a href="contact.html" className="card-btn">
+              <a href="contact" className="card-btn">
                 اختر الباقة
               </a>
             </div>
@@ -201,10 +208,10 @@ function Pricing() {
               </ul>
             </div>
             <div className="img-shape">
-              <img src="images/shape3.png" alt="Image" />
+            <Image src="/images/shape3.png" alt="Image" width={90} height={98.44}/>
             </div>
             <div className="card-button">
-              <a href="contact.html" className="card-btn">
+              <a href="contact" className="card-btn">
                 اختر الباقة
               </a>
             </div>
@@ -214,10 +221,10 @@ function Pricing() {
     </div>
     <div className="plan-shape-image">
       <div className="shape1">
-        <img src="images/shape1.png" alt="Image" />
+        <Image src="/images/shape1.png" alt="Image" width={67} height={47.4}/>
       </div>
       <div className="shape2">
-        <img src="images/shape2.png" alt="Image" />
+        <Image src="/images/shape2.png" alt="Image" width={67} height={68.4}/>
       </div>
     </div>
   </section>
@@ -277,61 +284,61 @@ function Pricing() {
       <div className="section-title text-center">
         <h6>مميزاتنا</h6>
         <h2>لماذا مركز واحة الطفل</h2>
-        <img src="images/title-border.png" alt="Image" />
+        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
       </div>
       <div className="feature-box-wrapper">
         <div className="single-feature">
           <div className="ico-bg1">
-            <img src="images/1.png" alt="Image" />
+            <Image src="/images/1.png" alt="Image" width={80} height={80}/>
           </div>
           <h2>أنشطة تعليمية</h2>
         </div>
         <div className="single-feature">
           <div className="image ico-bg2">
-            <img src="images/2_0.png" alt="Image" />
+            <Image src="/images/2_0.png" alt="Image" width={80} height={80}/>
           </div>
           <h2>أنشطة إبداعية</h2>
         </div>
         <div className="single-feature">
           <div className="image ico-bg3">
-            <img src="images/3.png" alt="Image" />
+            <Image src="/images/3.png" alt="Image" width={80} height={80}/>
           </div>
           <h2>طاقم مؤهل</h2>
         </div>
         <div className="single-feature">
           <div className="image ico-bg4">
-            <img src="images/4.png" alt="Image" />
+            <Image src="/images/4.png" alt="Image" width={80} height={80}/>
           </div>
           <h2>باقات اشتراك مرنة</h2>
         </div>
         <div className="offset-md-3 offset-lg-0 single-feature">
           <div className="image ico-bg5">
-            <img src="images/5.png" alt="Image" />
+            <Image src="/images/5.png" alt="Image" width={80} height={80}/>
           </div>
           <h2>نعمل على مدار السنة</h2>
         </div>
       </div>
     </div>
     <div className="event-shape">
-      <div className="shape1">
-        <img src="images/shape7.png" alt="Shape" />
-      </div>
-      <div className="shape2">
-        <img src="images/shape8.png" alt="Shape" />
-      </div>
-      <div className="shape3">
-        <img src="images/shape9.png" alt="Shape" />
-      </div>
-      <div className="shape4">
-        <img src="images/shape10.png" alt="Shape" />
-      </div>
-      <div className="shape5">
-        <img src="images/shape11.png" alt="Shape" />
-      </div>
-      <div className="shape6">
-        <img src="images/shape12.png" alt="Shape" />
-      </div>
-    </div>
+            <div className="shape1">
+              <Image src={shape7} alt="Shape" width={32} height={83}/>
+            </div>
+            <div className="shape2">
+            <Image src={shape8} alt="Shape" width={32} height={31}/>
+            </div>
+            <div className="shape3">
+            <Image src={shape9} alt="Shape" width={32} height={34}/>
+            </div>
+            <div className="shape4">
+            <Image src={shape10} alt="Shape" width={32} height={32}/>
+            </div>
+            <div className="shape5">
+            <Image src={shape11} alt="Shape" width={32} height={46}/>
+            </div>
+            <div className="shape6">
+            <Image src={shape12} alt="Shape" width={32} height={30}/>
+            </div>
+          </div>
   </section>
   {/* End Features2 Section */}
 </>

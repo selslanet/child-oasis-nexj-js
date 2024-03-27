@@ -2,11 +2,12 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Loader from './Loader'
+import Image from 'next/image'
 
 function Faq() {
   return (
     <div>
-      <Loader />
+      {/* <Loader /> */}
         <Header />
         <>
   {/* Login-Modal */}
@@ -16,7 +17,7 @@ function Faq() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -121,7 +122,7 @@ function Faq() {
               <li>الأسئلة الشائعة</li>
               <i className="flaticon-left-arrow" />
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
               </li>
             </ul>
           </div>
@@ -140,7 +141,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+              <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -162,7 +163,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+             <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -184,7 +185,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+            <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -209,7 +210,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+             <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -234,7 +235,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+          <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -259,7 +260,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+            <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -281,7 +282,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+              <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -303,7 +304,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+              <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -325,7 +326,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+              <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -347,7 +348,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <img src="images/faq.png" alt="Image" />
+             <Image src="/images/faq.png" alt="Image" width={100} height={93.88}/>
             </div>
           </div>
           <div className="col-lg-10">

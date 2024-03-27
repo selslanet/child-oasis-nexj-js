@@ -1,6 +1,13 @@
-import React from 'react'
 
+'use client'
+
+import { usePathname } from 'next/navigation'
+import Link from "next/link";
+
+import childlogo from "../../../public/images/child-logo.png"
+import Image from 'next/image';
 function Header() {
+  const pathname = usePathname()
   return (
     <header>
     <div className="header-top-wrapper">
@@ -80,12 +87,75 @@ function Header() {
     <div className="navbar-area">
       {/* Menu For Mobile Device */}
       <div className="mobile-nav menu-shrink">
-        <a href="/home" className="logo">
-          <img src="images/child-logo.png" alt="Image" />
+        <a href="/" className="logo">
+          <Image src={childlogo} alt="Image" width={200} height={75}/>
         </a>
       </div>
       {/* Menu For Desktop Device */}
       <div className="main-nav">
+            <div className="container">
+              <nav className="navbar navbar-expand-md navbar-light">
+                <div className="logo">
+                  <Link className="navbar-brand" href='/'>
+                    <img src="/images/child-logo.png" alt="Logo" />
+                  </Link>
+                </div>
+                <div
+                  className="collapse navbar-collapse mean-menu"
+                  id="navbarSupportedContent"
+                >
+                  <ul className="navbar-nav m-auto">
+                    {/* <li className="nav-item">
+                      <Link href="/" className="nav-link">
+                        الصفحة الرئيسية
+                      </Link>
+                    </li> */}
+                    <li className="nav-item">
+                      <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}>
+                        الصفحة الرئيسية
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}>
+                        من نحن
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/pricing" className={`link ${pathname === '/pricing' ? 'active' : ''}`}>
+                        باقات الاشتراك
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/faq" className={`link ${pathname === '/faq' ? 'active' : ''}`}>
+                        الأسئلة الشائعة
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/blog" className={`link ${pathname === '/blog' ? 'active' : ''}`}>
+                        أحدث المواضيع
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/contact" className={`link ${pathname === '/contact' ? 'active' : ''}`}>
+                        اتصل بنا
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href=".search">
+                        <i className="fa fa-search"></i>
+                      </Link>
+                    </li>
+                    <li className="custom-button">
+                      <Link href="/pricing" className="custom-btn">
+                        باقات الاشتراك
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+      {/* <div className="main-nav">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="logo">
@@ -142,7 +212,7 @@ function Header() {
             </div>
           </nav>
         </div>
-      </div>
+      </div> */}
     </div>
     {/* End Navbar Area */}
   </header>

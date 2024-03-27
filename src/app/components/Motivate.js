@@ -2,93 +2,18 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Loader from './Loader'
+import Link from 'next/link'
+import Image from 'next/image'
+
 
 function Motivate() {
   return (
     <div>
-      <Loader />
+      {/* <Loader /> */}
         <Header />
         <>
   {/* Login-Modal */}
-  <div className="modal fade" id="modalCart" role="dialog" aria-hidden="true">
-    <div className="modal-dialog" role="document">
-      <div className="modal-content">
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="modal-header">
-              <h4 className="modal-title" id="myModalLabel">
-                Login
-              </h4>
-              <form>
-                <label>Email</label>
-                <input
-                  type="text"
-                  name="username"
-                  className="username form-control"
-                  placeholder="Enter your username"
-                />
-                <label className="password-label">password</label>
-                <input
-                  type="password"
-                  name="password"
-                  className="password form-control"
-                  placeholder="Enter your password"
-                />
-              </form>
-              <button
-                type="button"
-                className="close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-              <div className="frm-all-btn">
-                <div className="forgot-password">
-                  <a href="#" className="f-pass">
-                    lost your password
-                  </a>
-                  <a href="#">create a account</a>
-                </div>
-                <button type="submit" className="btn login-btn btn-xs">
-                  login
-                </button>
-                <div className="social-link">
-                  <ul>
-                    <li>
-                      <a href={3} className="color-1">
-                        <i className="flaticon-facebook-logo" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={3} className="color-2">
-                        <i className="flaticon-google-plus-symbol" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={3} className="color-3">
-                        <i className="flaticon-twitter-black-shape" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href={3} className="color-4">
-                        <i className="flaticon-linkedin-letters" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
   {/* End Navbar Area */}
   {/* Login-Modal */}
   <div className="modal fade" id="modalCart" role="dialog" aria-hidden="true">
@@ -97,7 +22,7 @@ function Motivate() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-              <img src="images/modal-bg.png" alt="Image" />
+            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -199,7 +124,7 @@ function Motivate() {
             <h1>كيف تحفز طفلك للقراءة</h1>
             <ul>
               <li>
-                <a href="/home">الصفحة الرئيسية</a>
+                <a href="/">الصفحة الرئيسية</a>
                 <i className="flaticon-right-arrow" />
               </li>
               <li>كيف تحفز طفلك للقراءة</li>
@@ -219,7 +144,7 @@ function Motivate() {
             <div className="single-blog">
               <div className="blog-image">
                 <div className="single-img">
-                  <img src="images/1.jpg" alt="Image" height={480} />
+                  <Image src="/images/1.jpg" alt="Image" height={480} width={736}/>
                 </div>
               </div>
               <div className="blog-content">
@@ -258,16 +183,16 @@ function Motivate() {
               <div className="latest-posts">
                 <div className="latest-title">
                   <h3>أحدث المواضيع</h3>
-                  <img src="images/title-img.png" alt="Image" />
+                  <Image src="/images/title-img.png" alt="Image" width={68} height={4}/>
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <img src="images/2.png" alt="image" height={75} />
+                    <Image src="/images/2.png" alt="image" height={75} width={100}/>
                   </div>
                   <div className="p-text">
-                    <a href="What-does-your-child-need-in-the-nursery-bag-details.html">
+                    <Link href="/childneed">
                       <h3>ماذا يحتاج طفلك في حقيبة الحضانة ؟</h3>
-                    </a>
+                    </Link>
                     <span>
                       <i className="fa fa-calendar" /> ١٦ مايو ٢٠١٦.
                     </span>
@@ -275,12 +200,12 @@ function Motivate() {
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <img src="images/9.jpg" alt="image" height={75} />
+                    <Image src="/images/9.jpg" alt="image" height={75} width={100} />
                   </div>
                   <div className="p-text">
-                    <a href="Healthy-breakfast-for-kids-in-the-kindergarten-details.html">
+                    <Link href="/health">
                       <h3>فطور صحي للأطفال في الروضة</h3>
-                    </a>
+                    </Link>
                     <span>
                       <i className="fa fa-calendar" />
                       ٢٢ مارس ٢٠٢٢.
@@ -289,12 +214,12 @@ function Motivate() {
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <img src="images/1.jpg" alt="image" height={75} />
+                    <Image src="/images/1.jpg" alt="image" height={75} width={100} />
                   </div>
                   <div className="p-text">
-                    <a href="How-to-motivate-your-child-to-read-details.html">
+                    <Link href="/motivate">
                       <h3>كيف تحفز طفلك للقراءة</h3>
-                    </a>
+                    </Link>
                     <span>
                       <i className="fa fa-calendar" />٧ نوفمبر ٢٠٢٣.
                     </span>
@@ -306,9 +231,9 @@ function Motivate() {
                 <p>للحصول على أي معلومات </p>
                 <h4>٠٥٠٠٨٩٩١٧٣</h4>
                 <div className="card-button">
-                  <a href="#" className="card-btn">
+                  <Link href="contact" className="card-btn">
                     اتصل بنا
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

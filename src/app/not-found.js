@@ -12,7 +12,7 @@ function Error() {
             <p>we are sorry for the inconvinience! please try again later...</p>
           </div>
           <div className="custom-button">
-            <a href="/home" className="custom-btn">
+            <a href="/" className="custom-btn">
               back to home
             </a>
           </div>
