@@ -190,7 +190,7 @@ function Home() {
                             <h3>مركز واحة الطفل</h3>
                             <p>رعاية محبة وتنمية إبداع</p>
                             <div className="custom-button">
-                              <a href="#" class="custom-btn">
+                              <a href="#" className="custom-btn">
                                 عن المركز
                               </a>
                             </div>
@@ -233,7 +233,7 @@ function Home() {
                             <h3>بيئة رعاية دافئة</h3>
                             <p>نحن وجهتك المناسبة لرعايتك طفلك </p>
                             <div className="custom-button">
-                              <a href="#" class="custom-btn">
+                              <a href="#" className="custom-btn">
                                 للمزيد
                               </a>
                             </div>
@@ -399,8 +399,8 @@ function Home() {
                       </li>
                     </ul>
                   </div>
-                  {/* <div class="custom-button">
-                          <a href="#" class="custom-btn">
+                  {/* <div className="custom-button">
+                          <a href="#" className="custom-btn">
                               للمزيد
                           </a>
                       </div> */}
@@ -581,8 +581,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div class="custom-button text-center"> */}
-            {/* <a href="#" class="custom-btn"> */}
+            {/* <div className="custom-button text-center"> */}
+            {/* <a href="#" className="custom-btn"> */}
             {/* عرض التفاصيل  */}
             {/* </a> */}
             {/* </div> */}
@@ -607,7 +607,7 @@ function Home() {
                 أنشطة مخصصة لتلبية الحاجات المعرفية واللغوية لدى الأطفال من خلال
                 الكتب.{" "}
               </p>
-              {/* <a href="#" class="read-more-btn">اقرأ أكثر<i class="fa fa-angle-left" aria-hidden="true"></i></a> */}
+              {/* <a href="#" className="read-more-btn">اقرأ أكثر<i className="fa fa-angle-left" aria-hidden="true"></i></a> */}
             </div>
             <div className="single-event2">
               <div className="time">
@@ -616,7 +616,7 @@ function Home() {
               </div>
               <h2>أنشطة مركز العلوم</h2>
               <p>هذه الأنشطة تسمح للأطفال استكشاف عالمهم والبحث. </p>
-              {/* <a href="#" class="read-more-btn">اقرأ أكثر<i class="fa fa-angle-left" aria-hidden="true"></i></a> */}
+              {/* <a href="#" className="read-more-btn">اقرأ أكثر<i className="fa fa-angle-left" aria-hidden="true"></i></a> */}
             </div>
             <div className="single-event2">
               <div className="time">
@@ -628,7 +628,7 @@ function Home() {
                 أنشطة يتفاعل فيها الطفل بشكل مباشر مع وسائل وأدوات محسوسة مثل
                 ألعاب.{" "}
               </p>
-              {/* <a href="#" class="read-more-btn">اقرأ أكثر<i class="fa fa-angle-left" aria-hidden="true"></i></a> */}
+              {/* <a href="#" className="read-more-btn">اقرأ أكثر<i className="fa fa-angle-left" aria-hidden="true"></i></a> */}
             </div>
             <div className="single-event2">
               <div className="time">
@@ -638,7 +638,7 @@ function Home() {
               </div>
               <h2>أنشطة مركز الفنون</h2>
               <p>أنشطة مخصصة لتلبية الحاجات المعرفية واللغوية لدى الأطفال. </p>
-              {/* <a href="#" class="read-more-btn">اقرأ أكثر<i class="fa fa-angle-left" aria-hidden="true"></i></a> */}
+              {/* <a href="#" className="read-more-btn">اقرأ أكثر<i className="fa fa-angle-left" aria-hidden="true"></i></a> */}
             </div>
           </div>
           {/* <div className="event-shape">
@@ -1021,23 +1021,23 @@ function Home() {
         </div>
         {/* End Logo Section */}
         {/* Blog2 Section */}
-        {/* <section class="blog2-section ptb-100"> 
-      <div class="container">
-          <div class="section-title text-center">
+        {/* <section className="blog2-section ptb-100"> 
+      <div className="container">
+          <div className="section-title text-center">
               <h6>أحدث المواضيع</h6>
               <h2>آخر مدونة</h2>
               <img src="images/title-border.png" alt="Image">
           </div>
-          <div class="blog-slider-two owl-carousel owl-theme">
-              <div class="single-blog">
-                  <div class="blog-image">
+          <div className="blog-slider-two owl-carousel owl-theme">
+              <div className="single-blog">
+                  <div className="blog-image">
                       <a href="blog-details.html"><img src="images/1.jpg" alt="Image"></a>
                   </div>
-                  <div class="img-caption">
-                      <div class="blog-chat-list">
+                  <div className="img-caption">
+                      <div className="blog-chat-list">
                           <ul>
-                              <li class="date"><i class="fa fa-calendar" aria-hidden="true"></i>٧ نوفمبر ٢٠٢٣.</li>
-                              <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
+                              <li className="date"><i className="fa fa-calendar" aria-hidden="true"></i>٧ نوفمبر ٢٠٢٣.</li>
+                              <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
                           </ul>
                       </div>
                       <a href="latest-topics-كيف-تحفز-طفلك-للقراءة.html">
@@ -1045,19 +1045,19 @@ function Home() {
                       </a>
                       <p> اجعل القراءة جزءًا طبيعيًا من روتين طفلك اليومي-
                           </p>
-                      <a href="blog-details.html" class="read-more-btn">اقرأ أكثر
-                          <i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                      <a href="blog-details.html" className="read-more-btn">اقرأ أكثر
+                          <i className="fa fa-long-arrow-left" aria-hidden="true"></i></a>
                   </div>
               </div>
-              <div class="single-blog">
-                  <div class="blog-image">
+              <div className="single-blog">
+                  <div className="blog-image">
                       <a href="blog-details.html"><img src="images/2.png" alt="Image"></a>
                   </div>
-                  <div class="img-caption">
-                      <div class="blog-chat-list">
+                  <div className="img-caption">
+                      <div className="blog-chat-list">
                           <ul>
-                              <li class="date"><i class="fa fa-calendar" aria-hidden="true"></i>١٦ مايو ٢٠١٦.</li>
-                              <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
+                              <li className="date"><i className="fa fa-calendar" aria-hidden="true"></i>١٦ مايو ٢٠١٦.</li>
+                              <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
                           </ul>
                       </div>
                       <a href="latest-topics- ماذا-يحتاج-طفلك-في-حقيبة-الحضانة.html"><h3> ماذا يحتاج طفلك في حقيبة الحضانة ؟</h3></a>
@@ -1110,18 +1110,18 @@ function Home() {
                            ترتيب حقيبة الحضانة؟
                           
                           بعد أن أعددتِ قائمة بما يحتاجه طفلك، عليكِ الآن ترتيب حقيبة الحضانة بشكل منظم، حتى يسهل على طفلك إيجاد ما يبحث عنه فيها بسهولة: اتركي حفاضات الطفل مع أغراض النظافة الشخصية، كالمناديل المبللة، وجل التعقيم، والمنشفة في جيب منفصل. ويُفضل ترك هذه الأغراض في الحضانة كما ذكرنا. لا تضعي زجاجة الماء مع الكتب حتى لا تتلفها في حال تسربه، لذا يفضل اختيار حافظة لزجاجة الماء، حتى يحملها الطفل بمفردها، أو وضعها في الحقيبة في جيب منفصل. لذا ننصحكِ بشراء الحقيبة ذات الجيوب الجانبية المخصصة لوضع الزجاجة، بعيدًا عن الأغراض الموجودة داخل الحقيبة. غلفي الفاكهة أو الخضروات المقطعة باستخدام رول البلاستيك، ثم ضعيهما في اللانش بوكس، لحفظها من التقاط الأتربة إذا وقعت من الطفل، ومنع تسرب قطرات الماء منها على أدوات طفلك.  رصي كتب الطفل والأقلام في الحقيبة، خصصي مقلمة للأدوات المكتبية. وإذا كانت حقيبة الطفل بجيب واحد، يمكنكِ شراء منظم للحقائب، وهو متوافر بالأسواق لتنظيم أغراض الطفل داخل حقيبته..... </p>
-                      <a href="blog-details.html" class="read-more-btn">اقرأ أكثر<i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                      <a href="blog-details.html" className="read-more-btn">اقرأ أكثر<i className="fa fa-long-arrow-left" aria-hidden="true"></i></a>
                   </div>
               </div>
-              <div class="single-blog">
-                  <div class="blog-image">
+              <div className="single-blog">
+                  <div className="blog-image">
                       <a href="blog-details.html"><img src="images/9.jpg" alt="Image"></a>
                   </div>
-                  <div class="img-caption">
-                      <div class="blog-chat-list">
+                  <div className="img-caption">
+                      <div className="blog-chat-list">
                           <ul>
-                              <li class="date"><i class="fa fa-calendar" aria-hidden="true"></i>٢٢ مارس ٢٠٢٢.</li>
-                              <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
+                              <li className="date"><i className="fa fa-calendar" aria-hidden="true"></i>٢٢ مارس ٢٠٢٢.</li>
+                              <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li>
                           </ul>
                       </div>
                       <a href="latest-topics-فطور-صحي-للأطفال-في-الروضلة.html"><h3>فطور صحي للأطفال في الروضة</h3></a>
@@ -1172,25 +1172,25 @@ function Home() {
                           ناجتس مصنوعة في المنزل مع الخضراوات.
                          
                          أرز والدجاج.ة.... </p>
-                      <a href="blog-details.html" class="read-more-btn">اقرأ أكثر<i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                      <a href="blog-details.html" className="read-more-btn">اقرأ أكثر<i className="fa fa-long-arrow-left" aria-hidden="true"></i></a>
                   </div>
               </div>
           </div>
-          <div class="blog-baby-image">
+          <div className="blog-baby-image">
               <ul>
-                  <li class="image-1">
+                  <li className="image-1">
                       <img src="images/5_1.png" alt="Image">
                   </li>
-                  <li class="image-1">
+                  <li className="image-1">
                       <img src="images/6_1.png" alt="Image">
                   </li>
-                  <li class="image-1">
+                  <li className="image-1">
                       <img src="images/5_1.png" alt="Image">
                   </li>
-                  <li class="image-4">
+                  <li className="image-4">
                       <img src="images/6_1.png" alt="Image">
                   </li>
-                  <li class="image-5">
+                  <li className="image-5">
                       <img src="images/5_1.png" alt="Image">
                   </li>
               </ul>
@@ -1222,7 +1222,7 @@ function Home() {
                         <i className="fa fa-calendar" aria-hidden="true" />٧ نوفمبر
                         ٢٠٢٣.
                       </li>
-                      {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
+                      {/* <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
                   <Link href="motivate">
@@ -1251,7 +1251,7 @@ function Home() {
                         <i className="fa fa-calendar" aria-hidden="true" />
                         ١٦ مايو ٢٠٢٢.
                       </li>
-                      {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
+                      {/* <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
                   <a href="childneed">
@@ -1332,7 +1332,7 @@ function Home() {
                         <i className="fa fa-calendar" aria-hidden="true" />
                         ٢٢ مارس ٢٠٢٢.
                       </li>
-                      {/* <li><i class="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
+                      {/* <li><i className="fa fa-comments" aria-hidden="true"></i>3 تعليقات</li> */}
                     </ul>
                   </div>
                   <Link href="health">

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 function Error() {
@@ -17,7 +18,7 @@ function Error() {
             </a>
           </div>
           <div className="image">
-            <img src="images/404.png" alt="Image" />
+            <Image src="/images/404.png" alt="Image" width={571} height={181}/>
           </div>
         </div>
       </div>
