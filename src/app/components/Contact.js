@@ -2,8 +2,8 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import Loader from './Loader';
-import Image from 'next/image';
-
+// import ExportedImage from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 function Contact() {
   return (
     <div>
@@ -17,7 +17,7 @@ function Contact() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
+            <ExportedImage unoptimized={true} src="/images/modal-bg.png" alt="ExportedImage" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -135,7 +135,7 @@ function Contact() {
     <div className="container">
       <div className="section-title text-center">
         <h2>طلب تسجيل أو استفسار </h2>
-        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
+        <ExportedImage unoptimized={true} src="/images/title-border.png" alt="ExportedImage" width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-lg-12">
@@ -238,7 +238,7 @@ function Contact() {
     <div className="container">
       <div className="section-title text-center">
         <h2>تواصل معنا</h2>
-        <Image src="/images/title-border.png" alt="Image" width={127} height={8}/>
+        <ExportedImage unoptimized={true} src="/images/title-border.png" alt="ExportedImage" width={127} height={8}/>
       </div>
       <div className="row">
         <div className="col-md-6 col-lg-4">

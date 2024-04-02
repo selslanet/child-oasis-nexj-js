@@ -3,8 +3,8 @@ import Header from './Header'
 import Footer from './Footer'
 import Loader from './Loader'
 import Link from 'next/link'
-import Image from 'next/image'
-
+// import ExportedImage from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 
 function Motivate() {
   return (
@@ -22,7 +22,7 @@ function Motivate() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
+            <ExportedImage unoptimized={true} src="/images/modal-bg.png" alt="ExportedImage" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -144,7 +144,7 @@ function Motivate() {
             <div className="single-blog">
               <div className="blog-image">
                 <div className="single-img">
-                  <Image src="/images/1.jpg" alt="Image" height={480} width={736}/>
+                  <ExportedImage unoptimized={true} src="/images/1.jpg" alt="ExportedImage" height={480} width={736}/>
                 </div>
               </div>
               <div className="blog-content">
@@ -183,11 +183,11 @@ function Motivate() {
               <div className="latest-posts">
                 <div className="latest-title">
                   <h3>أحدث المواضيع</h3>
-                  <Image src="/images/title-img.png" alt="Image" width={68} height={4}/>
+                  <ExportedImage unoptimized={true} src="/images/title-img.png" alt="ExportedImage" width={68} height={4}/>
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <Image src="/images/2.png" alt="image" height={75} width={100}/>
+                    <ExportedImage unoptimized={true} src="/images/2.png" alt="image" height={75} width={100}/>
                   </div>
                   <div className="p-text">
                     <Link href="/childneed">
@@ -200,7 +200,7 @@ function Motivate() {
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <Image src="/images/9.jpg" alt="image" height={75} width={100} />
+                    <ExportedImage unoptimized={true} src="/images/9.jpg" alt="image" height={75} width={100} />
                   </div>
                   <div className="p-text">
                     <Link href="/health">
@@ -214,7 +214,7 @@ function Motivate() {
                 </div>
                 <div className="posts-box">
                   <div className="p-img">
-                    <Image src="/images/1.jpg" alt="image" height={75} width={100} />
+                    <ExportedImage unoptimized={true} src="/images/1.jpg" alt="image" height={75} width={100} />
                   </div>
                   <div className="p-text">
                     <Link href="/motivate">

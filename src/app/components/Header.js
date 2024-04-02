@@ -5,7 +5,8 @@ import { usePathname } from 'next/navigation'
 import Link from "next/link";
 
 import childlogo from "../../../public/images/child-logo.png"
-import Image from 'next/image';
+// import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 function Header() {
   const pathname = usePathname()
   return (
@@ -80,7 +81,7 @@ function Header() {
         {/* Menu For Mobile Device */}
         <div className="mobile-nav menu-shrink">
           <a href="/" className="logo">
-            <Image src={childlogo} alt="Image" width={100} height={37.85} />
+            <ExportedImage unoptimized={true} src={childlogo} alt="Image" width={100} height={37.85} />
           </a>
         </div>
         {/* Menu For Desktop Device */}
@@ -89,7 +90,7 @@ function Header() {
             <nav className="navbar navbar-expand-md navbar-light">
               <div className="logo">
                 <Link className="navbar-brand" href='/'>
-                  <Image src={childlogo} alt="Logo" width={200} height={75} />
+                  <ExportedImage unoptimized={true} src={childlogo} alt="Logo" width={200} height={75} />
                 </Link>
               </div>
               <div

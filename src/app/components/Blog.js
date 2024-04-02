@@ -3,7 +3,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Loader from './Loader';
 import Link from 'next/link';
-import Image from 'next/image';
+// import ExportedImage from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 function Blog() {
   return (
@@ -20,7 +21,7 @@ function Blog() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
+            <ExportedImage unoptimized={true} src="/images/modal-bg.png" alt="ExportedImage" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -141,7 +142,7 @@ function Blog() {
           <div className="single-blog mb-30">
             <div className="blog-image">
               <Link href="/motivate">
-                <Image src="/images/1.jpg" alt="Image" width={356} height={264.64}/>
+                <ExportedImage unoptimized={true} src="/images/1.jpg" alt="ExportedImage" width={356} height={264.64}/>
               </Link>
             </div>
             <div className="img-caption">
@@ -169,7 +170,7 @@ function Blog() {
           <div className="single-blog mb-30">
             <div className="blog-image">
               <Link href="/childneed">
-                <Image src="/images/2.png" alt="Image"  width={356} height={264.64}/>
+                <ExportedImage unoptimized={true} src="/images/2.png" alt="ExportedImage"  width={356} height={264.64}/>
               </Link>
             </div>
             <div className="img-caption">
@@ -200,7 +201,7 @@ function Blog() {
           <div className="single-blog mb-30">
             <div className="blog-image">
               <Link href="/health">
-                <Image src="/images/9.jpg" alt="Image"  width={356} height={264.64}/>
+                <ExportedImage unoptimized={true} src="/images/9.jpg" alt="ExportedImage"  width={356} height={264.64}/>
               </Link>
             </div>
             <div className="img-caption">

@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Image from "next/image";
+// import ExportedImage from "next/image";
+import ExportedImage from 'next-image-export-optimizer';
 import Link from "next/link";
 // Child Care Slider
 import sliderimg2 from "../../public/images/slider-img2.png"
@@ -83,7 +84,7 @@ function Home() {
               <div className="row">
                 <div className="col-lg-6">
                   <div className="modal-form-left">
-                    <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14} />
+                    <ExportedImage unoptimized={true} src="/images/modal-bg.png" alt="ExportedImage" width={347} height={450.14} />
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -200,18 +201,18 @@ function Home() {
                       <div className="col-md-6 col-lg-6">
                         <div className="slider-img">
                           <div className="img wow fadeInLeft">
-                            <Image src={sliderimg2} alt="Image" width={500} height={500} />
+                            <ExportedImage unoptimized={true} src={sliderimg2} alt="ExportedImage" width={500} height={500} />
                           </div>
                           <div className="img-shape">
-                            <Image src={bannershape} alt="Image" width={500} height={500} />
+                            <ExportedImage unoptimized={true} src={bannershape} alt="ExportedImage" width={500} height={500} />
                           </div>
                         </div>
                       </div>
                       <div className="slider-shape">
                         <div className="img-shape2">
-                          <Image
-                            src={slidershape}
-                            alt="Image"
+                          <ExportedImage
+                            unoptimized={true} src={slidershape}
+                            alt="ExportedImage"
                             width={500}
                             height={500}
                           />
@@ -243,17 +244,17 @@ function Home() {
                       <div className="col-md-6 col-lg-6">
                         <div className="slider-img">
                           <div className="img wow fadeInLeft">
-                            <Image
-                              src={sliderimg}
-                              alt="Image"
+                            <ExportedImage
+                              unoptimized={true} src={sliderimg}
+                              alt="ExportedImage"
                               width={500}
                               height={500}
                             />
                           </div>
                           <div className="img-shape wow fadeInRight">
-                            <Image
-                              src={bannershape}
-                              alt="Image"
+                            <ExportedImage
+                              unoptimized={true} src={bannershape}
+                              alt="ExportedImage"
                               width={500}
                               height={500}
                             />
@@ -262,7 +263,7 @@ function Home() {
                       </div>
                       <div className="slider-shape">
                         <div className="img-shape2">
-                          <Image src={slidershape} alt="Image" width={500} height={500} />
+                          <ExportedImage unoptimized={true} src={slidershape} alt="ExportedImage" width={500} height={500} />
                         </div>
                       </div>
                     </div>
@@ -273,16 +274,16 @@ function Home() {
           </div>
           <div className="slider-all-shape">
             <div className="shape1">
-              <Image src={shape1} alt="Shape" width={50} height={50} />
+              <ExportedImage unoptimized={true} src={shape1} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape2">
-              <Image src={shape2} alt="Shape" width={50} height={50} />
+              <ExportedImage unoptimized={true} src={shape2} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape3">
-              <Image src={shape3} alt="Shape" width={50} height={50} />
+              <ExportedImage unoptimized={true} src={shape3} alt="Shape" width={50} height={50} />
             </div>
             <div className="shape4">
-              <Image src={shape4} alt="Shape" width={50} height={50} />
+              <ExportedImage unoptimized={true} src={shape4} alt="Shape" width={50} height={50} />
             </div>
           </div>
         </section>
@@ -294,7 +295,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image1">
-                    <Image src={ibg1} alt="Image" width={105} height={77} />
+                    <ExportedImage unoptimized={true} src={ibg1} alt="ExportedImage" width={105} height={77} />
                   </div>
                   <h3>رعاية شاملة</h3>
                   <p>
@@ -306,7 +307,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image2">
-                    <Image src={ibg2} alt="Image" width={105} height={77} />
+                    <ExportedImage unoptimized={true} src={ibg2} alt="ExportedImage" width={105} height={77} />
                   </div>
                   <h3>تعليم فعال</h3>
                   <p>
@@ -319,7 +320,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image3">
-                    <Image src={ibg3} alt="Image" width={105} height={77} />
+                    <ExportedImage unoptimized={true} src={ibg3} alt="ExportedImage" width={105} height={77} />
                   </div>
                   <h3>بيئة سعيدة</h3>
                   <p>
@@ -332,7 +333,7 @@ function Home() {
               <div className="col-md-6 col-lg-3">
                 <div className="single-feature text-center">
                   <div className="image4">
-                    <Image src={ibg4} alt="Image" width={105} height={77} />
+                    <ExportedImage unoptimized={true} src={ibg4} alt="ExportedImage" width={105} height={77} />
                   </div>
                   <h3>طاقم مؤهل</h3>
                   <p>
@@ -354,7 +355,7 @@ function Home() {
                   <div className="section-title">
                     <h6>معلومات عنا</h6>
                     <h2>مرحبًا بك في مركز واحة الطفل</h2>
-                    <Image src={titleborder} alt="Image" width={100} height={6} />
+                    <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={100} height={6} />
                     <p>
                       نحن نؤمن بأهمية مرحلة الحضانة والتأثير الإيجابي الذي يمكن
                       أن يكون له على حياة الأطفال. في واحتنا، نقوم بتوفير أنشطة
@@ -409,26 +410,26 @@ function Home() {
               <div className="col-lg-6">
                 <div className="single-about-bg2 item-bg">
                   <div className="image-shape2">
-                    <Image src={bgshapes3} alt="Shape" width={192} height={301} />
+                    <ExportedImage unoptimized={true} src={bgshapes3} alt="Shape" width={192} height={301} />
                   </div>
                   <div className="image">
-                    <Image src={aboutbg2} alt="Image" width={340.39} height={226.08} />
+                    <ExportedImage unoptimized={true} src={aboutbg2} alt="ExportedImage" width={340.39} height={226.08} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="shape1">
-            <Image src={shape111} alt="Image" width={33} height={31} />
+            <ExportedImage unoptimized={true} src={shape111} alt="ExportedImage" width={33} height={31} />
           </div>
           <div className="shape2">
-            <Image src={shape21} alt="Image" width={32} height={32} />
+            <ExportedImage unoptimized={true} src={shape21} alt="ExportedImage" width={32} height={32} />
           </div>
           <div className="shape3">
-            <Image src={shape31} alt="Image" width={48} height={55} />
+            <ExportedImage unoptimized={true} src={shape31} alt="ExportedImage" width={48} height={55} />
           </div>
           <div className="shape4">
-            <Image src={shape41} alt="Image" width={48} height={55} />
+            <ExportedImage unoptimized={true} src={shape41} alt="ExportedImage" width={48} height={55} />
           </div>
         </section>
         {/* End About Section */}
@@ -438,36 +439,36 @@ function Home() {
             <div className="section-title text-center">
               <h6>مميزاتنا</h6>
               <h2>لماذا مركز واحة الطفل</h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="feature-box-wrapper">
               <div className="single-feature">
                 <div className="ico-bg1">
-                  <Image src={f1} alt="Image" width={80} height={80} />
+                  <ExportedImage unoptimized={true} src={f1} alt="ExportedImage" width={80} height={80} />
                 </div>
                 <h2>أنشطة تعليمية</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg2">
-                  <Image src={f2} alt="Image" width={80} height={80} />
+                  <ExportedImage unoptimized={true} src={f2} alt="ExportedImage" width={80} height={80} />
                 </div>
                 <h2>أنشطة إبداعية</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg3">
-                  <Image src={f3} alt="Image" width={80} height={80} />
+                  <ExportedImage unoptimized={true} src={f3} alt="ExportedImage" width={80} height={80} />
                 </div>
                 <h2>طاقم مؤهل</h2>
               </div>
               <div className="single-feature">
                 <div className="image ico-bg4">
-                  <Image src={f4} alt="Image" width={80} height={80} />
+                  <ExportedImage unoptimized={true} src={f4} alt="ExportedImage" width={80} height={80} />
                 </div>
                 <h2>باقات اشتراك مرنة</h2>
               </div>
               <div className="offset-md-3 offset-lg-0 single-feature">
                 <div className="image ico-bg5">
-                  <Image src={f5} alt="Image" width={80} height={80} />
+                  <ExportedImage unoptimized={true} src={f5} alt="ExportedImage" width={80} height={80} />
                 </div>
                 <h2>نعمل على مدار السنة</h2>
               </div>
@@ -475,22 +476,22 @@ function Home() {
           </div>
           <div className="event-shape">
             <div className="shape1">
-              <Image src={shape7} alt="Shape" width={32} height={83} />
+              <ExportedImage unoptimized={true} src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape2">
-              <Image src={shape8} alt="Shape" width={32} height={31} />
+              <ExportedImage unoptimized={true} src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape3">
-              <Image src={shape9} alt="Shape" width={32} height={34} />
+              <ExportedImage unoptimized={true} src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape4">
-              <Image src={shape10} alt="Shape" width={32} height={32} />
+              <ExportedImage unoptimized={true} src={shape10} alt="Shape" width={32} height={32} />
             </div>
             <div className="shape5">
-              <Image src={shape11} alt="Shape" width={32} height={46} />
+              <ExportedImage unoptimized={true} src={shape11} alt="Shape" width={32} height={46} />
             </div>
             <div className="shape6">
-              <Image src={shape12} alt="Shape" width={32} height={30} />
+              <ExportedImage unoptimized={true} src={shape12} alt="Shape" width={32} height={30} />
             </div>
           </div>
         </section>
@@ -501,13 +502,13 @@ function Home() {
             <div className="section-title text-center">
               <h6>الأنشطة</h6>
               <h2>الأنشطة والبرامج الصفية</h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="program-slider owl-carousel owl-theme">
               <div className="single-program">
                 <div className="image">
                   <a href="#">
-                    <Image src={playactivity} alt="Image" width={292} height={217} />
+                    <ExportedImage unoptimized={true} src={playactivity} alt="ExportedImage" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -532,7 +533,7 @@ function Home() {
               <div className="single-program">
                 <div className="image">
                   <a href="#">
-                    <Image src={scienceactivity} alt="Image" width={292} height={217} />
+                    <ExportedImage unoptimized={true} src={scienceactivity} alt="ExportedImage" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -559,7 +560,7 @@ function Home() {
                 <div className="image">
                   <a href="#">
 
-                    <Image src={pg31} alt="Image" width={292} height={217} />
+                    <ExportedImage unoptimized={true} src={pg31} alt="ExportedImage" width={292} height={217} />
                   </a>
                 </div>
                 <div className="image-caption">
@@ -595,7 +596,7 @@ function Home() {
             <div className="section-title text-center">
               <h6>الجدول</h6>
               <h2>الجدول الزمني </h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="single-event2">
               <div className="time">
@@ -643,42 +644,42 @@ function Home() {
           </div>
           {/* <div className="event-shape">
             <div className="shape1">
-              <img src="images/shape7.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape7.png" alt="Shape" />
             </div>
             <div className="shape2">
-              <img src="images/shape8.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape8.png" alt="Shape" />
             </div>
             <div className="shape3">
-              <img src="images/shape9.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape9.png" alt="Shape" />
             </div>
             <div className="shape4">
-              <img src="images/shape10.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape10.png" alt="Shape" />
             </div>
             <div className="shape5">
-              <img src="images/shape11.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape11.png" alt="Shape" />
             </div>
             <div className="shape6">
-              <img src="images/shape12.png" alt="Shape" />
+              <img unoptimized={true} src="images/shape12.png" alt="Shape" />
             </div>
           </div> */}
           <div className="event-shape">
             <div className="shape1">
-              <Image src={shape7} alt="Shape" width={32} height={83} />
+              <ExportedImage unoptimized={true} src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape2">
-              <Image src={shape8} alt="Shape" width={32} height={31} />
+              <ExportedImage unoptimized={true} src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape3">
-              <Image src={shape9} alt="Shape" width={32} height={34} />
+              <ExportedImage unoptimized={true} src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape4">
-              <Image src={shape10} alt="Shape" width={32} height={32} />
+              <ExportedImage unoptimized={true} src={shape10} alt="Shape" width={32} height={32} />
             </div>
             <div className="shape5">
-              <Image src={shape11} alt="Shape" width={32} height={46} />
+              <ExportedImage unoptimized={true} src={shape11} alt="Shape" width={32} height={46} />
             </div>
             <div className="shape6">
-              <Image src={shape12} alt="Shape" width={32} height={30} />
+              <ExportedImage unoptimized={true} src={shape12} alt="Shape" width={32} height={30} />
             </div>
           </div>
         </section>
@@ -689,7 +690,7 @@ function Home() {
             <div className="section-title text-center">
               <h6>الباقات</h6>
               <h2>باقات الاشتراك</h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="row">
               <div className="col-md-6 col-lg-4">
@@ -707,7 +708,7 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <Image src={planshape32} alt="Image" width={90} height={88} />
+                    <ExportedImage unoptimized={true} src={planshape32} alt="ExportedImage" width={90} height={88} />
                   </div>
                   <div className="card-button">
                     <a href="contact" className="card-btn">
@@ -731,7 +732,7 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <Image src={planshape32} alt="Image" width={90} height={88} />
+                    <ExportedImage unoptimized={true} src={planshape32} alt="ExportedImage" width={90} height={88} />
                   </div>
                   <div className="card-button">
                     <a href="contact" className="card-btn">
@@ -755,7 +756,7 @@ function Home() {
                     </ul>
                   </div>
                   <div className="img-shape">
-                    <Image src={planshape32} alt="Image" width={90} height={88} />
+                    <ExportedImage unoptimized={true} src={planshape32} alt="ExportedImage" width={90} height={88} />
                   </div>
                   <div className="card-button">
                     <a href="contact" className="card-btn">
@@ -768,10 +769,10 @@ function Home() {
           </div>
           <div className="plan-shape-image">
             <div className="shape1">
-              <Image src={planshape12} alt="Image" width={67} height={128} />
+              <ExportedImage unoptimized={true} src={planshape12} alt="ExportedImage" width={67} height={128} />
             </div>
             <div className="shape2">
-              <Image src={planshape22} alt="Image" width={67} height={128} />
+              <ExportedImage unoptimized={true} src={planshape22} alt="ExportedImage" width={67} height={128} />
             </div>
           </div>
         </section>
@@ -783,32 +784,32 @@ function Home() {
             <div className="section-title text-center">
               <h6>التعليقات</h6>
               <h2>آراء العملاء من الآباء والأمهات</h2>
-              <Image src={titleborder2} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder2} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="testimonial-slider">
               <div className="client-image-list">
                 <div>
                   <div className="item">
                     <div className="sl-img">
-                      <Image src={sliderimg1} alt="image" width={85} height={85} />
+                      <ExportedImage unoptimized={true} src={sliderimg1} alt="image" width={85} height={85} />
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
                     
-                      <Image src={sliderimg3} alt="image" width={85} height={85} />
+                      <ExportedImage unoptimized={true} src={sliderimg3} alt="image" width={85} height={85} />
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
-                      <Image src={comments2} alt="image" width={85} height={85} />
+                      <ExportedImage unoptimized={true} src={comments2} alt="image" width={85} height={85} />
 
                     </div>
                   </div>
                   <div className="item">
                     <div className="sl-img">
                     
-                      <Image src={sliderimg4} alt="image" width={85} height={85} />
+                      <ExportedImage unoptimized={true} src={sliderimg4} alt="image" width={85} height={85} />
                     </div>
                   </div>
                 </div>
@@ -907,31 +908,31 @@ function Home() {
           </div>
           <div className="testimonial-shape">
             <div className="shape1">
-              <Image src={shape7} alt="Shape" width={32} height={83} />
+              <ExportedImage unoptimized={true} src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape2">
-              <Image src={shape7} alt="Shape" width={32} height={83} />
+              <ExportedImage unoptimized={true} src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape3">
-              <Image src={shape7} alt="Shape" width={32} height={83} />
+              <ExportedImage unoptimized={true} src={shape7} alt="Shape" width={32} height={83} />
             </div>
             <div className="shape4">
-              <Image src={shape8} alt="Shape" width={32} height={31} />
+              <ExportedImage unoptimized={true} src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape5">
-              <Image src={shape9} alt="Shape" width={32} height={34} />
+              <ExportedImage unoptimized={true} src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape6">
-              <Image src={shape9} alt="Shape" width={32} height={34} />
+              <ExportedImage unoptimized={true} src={shape9} alt="Shape" width={32} height={34} />
             </div>
             <div className="shape7">
-              <Image src={shape8} alt="Shape" width={32} height={31} />
+              <ExportedImage unoptimized={true} src={shape8} alt="Shape" width={32} height={31} />
             </div>
             <div className="shape8">
-              <Image src={shape12} alt="Shape" width={32} height={30} />
+              <ExportedImage unoptimized={true} src={shape12} alt="Shape" width={32} height={30} />
             </div>
             <div className="shape9">
-              <Image src={shape12} alt="Shape" width={32} height={30} />
+              <ExportedImage unoptimized={true} src={shape12} alt="Shape" width={32} height={30} />
             </div>
           </div>
         </section>
@@ -942,15 +943,15 @@ function Home() {
             <div className="section-title text-center">
               <h6>الفريق</h6>
               <h2>مقدمات الرعاية</h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="row">
               <div className="col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <Image
-                      src="/images/t2.png"
-                      alt="Image"
+                    <ExportedImage
+                      unoptimized={true} src="/images/t2.png"
+                      alt="ExportedImage"
                       height={170}
                       width={170}
                     />
@@ -965,9 +966,9 @@ function Home() {
               <div className="col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <Image
-                      src="/images/t1.png"
-                      alt="Image"
+                    <ExportedImage
+                      unoptimized={true} src="/images/t1.png"
+                      alt="ExportedImage"
                       height={170}
                       width={170}
                     />
@@ -982,9 +983,9 @@ function Home() {
               <div className="offset-md-3 offset-lg-0 col-md-6 col-lg-4">
                 <div className="single-member">
                   <div className="image">
-                    <Image
-                      src="/images/t3.png"
-                      alt="Image"
+                    <ExportedImage
+                      unoptimized={true} src="/images/t3.png"
+                      alt="ExportedImage"
                       height={170}
                       width={170}
                     />
@@ -1005,16 +1006,16 @@ function Home() {
           <div className="container">
             <div className="logo-slider owl-carousel owl-theme">
               <div className="single-logo">
-                <Image src="/images/1_2.png" alt="Logo" width={100} height={130} />
+                <ExportedImage unoptimized={true} src="/images/1_2.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <Image src="/images/2_3.png" alt="Logo" width={100} height={130} />
+                <ExportedImage unoptimized={true} src="/images/2_3.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <Image src="/images/3_3.png" alt="Logo" width={100} height={130} />
+                <ExportedImage unoptimized={true} src="/images/3_3.png" alt="Logo" width={100} height={130} />
               </div>
               <div className="single-logo">
-                <Image src="/images/4_1.png" alt="Logo" width={100} height={130} />
+                <ExportedImage unoptimized={true} src="/images/4_1.png" alt="Logo" width={100} height={130} />
               </div>
             </div>
           </div>
@@ -1026,12 +1027,12 @@ function Home() {
           <div className="section-title text-center">
               <h6>أحدث المواضيع</h6>
               <h2>آخر مدونة</h2>
-              <img src="images/title-border.png" alt="Image">
+              <img unoptimized={true} src="images/title-border.png" alt="ExportedImage">
           </div>
           <div className="blog-slider-two owl-carousel owl-theme">
               <div className="single-blog">
                   <div className="blog-image">
-                      <a href="blog-details.html"><img src="images/1.jpg" alt="Image"></a>
+                      <a href="blog-details.html"><img unoptimized={true} src="images/1.jpg" alt="ExportedImage"></a>
                   </div>
                   <div className="img-caption">
                       <div className="blog-chat-list">
@@ -1051,7 +1052,7 @@ function Home() {
               </div>
               <div className="single-blog">
                   <div className="blog-image">
-                      <a href="blog-details.html"><img src="images/2.png" alt="Image"></a>
+                      <a href="blog-details.html"><img unoptimized={true} src="images/2.png" alt="ExportedImage"></a>
                   </div>
                   <div className="img-caption">
                       <div className="blog-chat-list">
@@ -1115,7 +1116,7 @@ function Home() {
               </div>
               <div className="single-blog">
                   <div className="blog-image">
-                      <a href="blog-details.html"><img src="images/9.jpg" alt="Image"></a>
+                      <a href="blog-details.html"><img unoptimized={true} src="images/9.jpg" alt="ExportedImage"></a>
                   </div>
                   <div className="img-caption">
                       <div className="blog-chat-list">
@@ -1179,19 +1180,19 @@ function Home() {
           <div className="blog-baby-image">
               <ul>
                   <li className="image-1">
-                      <img src="images/5_1.png" alt="Image">
+                      <img unoptimized={true} src="images/5_1.png" alt="ExportedImage">
                   </li>
                   <li className="image-1">
-                      <img src="images/6_1.png" alt="Image">
+                      <img unoptimized={true} src="images/6_1.png" alt="ExportedImage">
                   </li>
                   <li className="image-1">
-                      <img src="images/5_1.png" alt="Image">
+                      <img unoptimized={true} src="images/5_1.png" alt="ExportedImage">
                   </li>
                   <li className="image-4">
-                      <img src="images/6_1.png" alt="Image">
+                      <img unoptimized={true} src="images/6_1.png" alt="ExportedImage">
                   </li>
                   <li className="image-5">
-                      <img src="images/5_1.png" alt="Image">
+                      <img unoptimized={true} src="images/5_1.png" alt="ExportedImage">
                   </li>
               </ul>
           </div>
@@ -1206,13 +1207,13 @@ function Home() {
             <div className="section-title text-center">
               <h6>أحدث المواضيع</h6>
               <h2>آخر مدونة</h2>
-              <Image src={titleborder} alt="Image" width={127} height={8} />
+              <ExportedImage unoptimized={true} src={titleborder} alt="ExportedImage" width={127} height={8} />
             </div>
             <div className="blog-slider-two owl-carousel owl-theme">
               <div className="single-blog">
                 <div className="blog-image">
                   <Link href="motivate">
-                    <Image src="/images/1.jpg" alt="Image" width={352} height={261} />
+                    <ExportedImage unoptimized={true} src="/images/1.jpg" alt="ExportedImage" width={352} height={261} />
                   </Link>
                 </div>
                 <div className="img-caption">
@@ -1241,7 +1242,7 @@ function Home() {
               <div className="single-blog">
                 <div className="blog-image">
                   <Link href="childneed">
-                    <Image src="/images/2.jpg" alt="Image" width={352} height={261} />
+                    <ExportedImage unoptimized={true} src="/images/2.jpg" alt="ExportedImage" width={352} height={261} />
                   </Link>
                 </div>
                 <div className="img-caption">
@@ -1322,7 +1323,7 @@ function Home() {
               <div className="single-blog">
                 <div className="blog-image">
                   <Link href="health">
-                    <Image src="/images/9.jpg" alt="Image" width={352} height={261} />
+                    <ExportedImage unoptimized={true} src="/images/9.jpg" alt="ExportedImage" width={352} height={261} />
                   </Link>
                 </div>
                 <div className="img-caption">
@@ -1401,20 +1402,20 @@ function Home() {
             <div className="blog-baby-image">
               <ul>
                 <li className="image-1">
-                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
+                  <ExportedImage unoptimized={true} src="/images/5_1.png" alt="ExportedImage" width={155} height={134.7} />
                 </li>
                 <li className="image-1">
-                  <Image src="/images/6_1.png" alt="Image" width={155} height={141.7} />
+                  <ExportedImage unoptimized={true} src="/images/6_1.png" alt="ExportedImage" width={155} height={141.7} />
                 </li>
                 <li className="image-1">
-                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
+                  <ExportedImage unoptimized={true} src="/images/5_1.png" alt="ExportedImage" width={155} height={134.7} />
                 </li>
                 <li className="image-4">
-                  <Image src="/images/6_1.png" alt="Image" width={155} height={141.7} />
+                  <ExportedImage unoptimized={true} src="/images/6_1.png" alt="ExportedImage" width={155} height={141.7} />
 
                 </li>
                 <li className="image-5">
-                  <Image src="/images/5_1.png" alt="Image" width={155} height={134.7} />
+                  <ExportedImage unoptimized={true} src="/images/5_1.png" alt="ExportedImage" width={155} height={134.7} />
                 </li>
               </ul>
             </div>

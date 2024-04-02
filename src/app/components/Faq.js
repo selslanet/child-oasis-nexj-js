@@ -2,7 +2,8 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 // import Loader from './Loader'
-import Image from 'next/image'
+// import ExportedImage from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 
 function Faq() {
   return (
@@ -17,7 +18,7 @@ function Faq() {
         <div className="row">
           <div className="col-lg-6">
             <div className="modal-form-left">
-            <Image src="/images/modal-bg.png" alt="Image" width={347} height={450.14}/>
+            <ExportedImage unoptimized={true} src="/images/modal-bg.png" alt="ExportedImage" width={347} height={450.14}/>
             </div>
           </div>
           <div className="col-lg-6">
@@ -141,7 +142,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93}/>
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -163,7 +164,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100}  height={93}/>
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100}  height={93}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -185,7 +186,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
@@ -210,7 +211,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93}/>
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -235,7 +236,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
@@ -260,7 +261,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
@@ -282,7 +283,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93}/>
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93}/>
             </div>
           </div>
           <div className="col-lg-10">
@@ -304,7 +305,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
@@ -326,7 +327,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
@@ -348,7 +349,7 @@ function Faq() {
               className="class-img-wrap"
               style={{ width: "100px !important" }}
             >
-              <Image src="/images/faq.png" alt="Image" width={100} height={93} />
+              <ExportedImage unoptimized={true} src="/images/faq.png" alt="ExportedImage" width={100} height={93} />
             </div>
           </div>
           <div className="col-lg-10">
